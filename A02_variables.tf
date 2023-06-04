@@ -1,4 +1,5 @@
 # vpc variables
+
 variable "vpc_cidr" {
   default     = "10.0.0.0/16"
   description = "vpc cidr block"
@@ -42,6 +43,7 @@ variable "private_data_subnet_az2_cidr" {
 }
 
 # security groups variables
+
 variable "ssh_location" {
   default     = "0.0.0.0/0" # we use this value for testing purpose, but for best proctice type the ip address that can ssh into the ec2 instance
   description = "the ip address that can ssh into the ec2 instance"
@@ -49,6 +51,7 @@ variable "ssh_location" {
 }
 
 # rds variables
+
 variable "db_snapshot_identifier" {
   default     = "arn:aws:rds:us-east-1:663098898416:snapshot:fleetcart-final-snapshot-to-use"
   description = "the database snapshot arn"
@@ -71,3 +74,12 @@ variable "multi_az_deployment" {
   description = "create a standby db instance"
   type        = bool
 }
+
+# application load balancer variable
+
+variable "ssl_certificate_arn" {
+  default     = "arn:aws:acm:us-east-1:663098898416:certificate/7fd24e2b-9ad1-445d-a3ab-a130c4bc824a"
+  description = "the arn of the ssl certificate"
+  type        = string
+}
+
