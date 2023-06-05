@@ -53,7 +53,7 @@ variable "ssh_location" {
 # rds variables
 
 variable "db_snapshot_identifier" {
-  default     = "arn:aws:rds:us-east-1:663098898416:snapshot:fleetcart-final-snapshot-to-use"
+  default     = "paste the value of your db snpshot arn here"
   description = "the database snapshot arn"
 }
 
@@ -78,7 +78,7 @@ variable "multi_az_deployment" {
 # application load balancer variable
 
 variable "ssl_certificate_arn" {
-  default     = "arn:aws:acm:us-east-1:663098898416:certificate/7fd24e2b-9ad1-445d-a3ab-a130c4bc824a"
+  default     = "paste the value of your certificate arn here"
   description = "the arn of the ssl certificate"
   type        = string
 }
@@ -86,7 +86,7 @@ variable "ssl_certificate_arn" {
 # sns topic variables
 
 variable "operator_email" {
-  default     = "attot.assi@gmail.com"
+  default     = "paste the value of your developer/operator email here"
   description = "a valid email address"
   type        = string
 }
@@ -120,7 +120,7 @@ variable "ec2_key_pair_name" {
 # route 53 variables
 
 variable "domain_name" {
-  default     = "attoassicloud.tk"
+  default     = "paste the value of your domain name here"
   description = "domain name"
   type        = string
 }
