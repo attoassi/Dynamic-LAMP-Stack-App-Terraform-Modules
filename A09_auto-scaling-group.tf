@@ -17,7 +17,7 @@ resource "aws_launch_template" "webserver_launch_template" {
 # create auto scaling group
 # terraform aws autoscaling group
 resource "aws_autoscaling_group" "auto_scaling_group" {
-  vpc_zone_identifier = ["subnet-00dc59c899259749c", "subnet-0b53c04991df50525"] #aws_subnet.private_app_subnet_az1.id aws_subnet.private_app_subnet_az2
+  vpc_zone_identifier = [aws_subnet.private_app_subnet_az1.id, aws_subnet.private_app_subnet_az2.id]
   desired_capacity    = 2
   max_size            = 4
   min_size            = 1
