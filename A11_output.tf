@@ -7,5 +7,5 @@ output "public_subnet_az1_id" {
 }
 
 output "website_url" {
-  value = join("", [var.record_name, ".", var.domain_name])
+  value = join("", ["https://", var.record_name, ".", var.domain_name])
 }
