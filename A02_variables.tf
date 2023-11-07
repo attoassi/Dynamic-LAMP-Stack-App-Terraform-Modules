@@ -45,7 +45,7 @@ variable "private_data_subnet_az2_cidr" {
 # security groups variables
 
 variable "ssh_location" {
-  default     = "0.0.0.0/0" # we use this value for testing purpose, but for best proctice type the ip address that can ssh into the ec2 instance
+  default     = "0.0.0.0/0" # we use this value for testing purpose, but for best proctice type the ip address that will be authorize to ssh into the ec2 instance
   description = "the ip address that can ssh into the ec2 instance"
   type        = string
 }
@@ -64,7 +64,7 @@ variable "database_instance_class" {
 }
 
 variable "database_instance_identifier" {
-  default     = "clientprojectdatabase"
+  default     = "paste your database instance identifier here"
   description = "database instance identifier"
   type        = string
 }
@@ -100,7 +100,7 @@ variable "aws_launch_template" {
 }
 
 variable "ec2_image_id" {
-  default     = "ami-042933cbdb248d221"
+  default     = "paste the image id of your webserver here"
   description = "id of the ami"
   type        = string
 }
