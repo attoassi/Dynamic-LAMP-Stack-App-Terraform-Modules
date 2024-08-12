@@ -1,6 +1,6 @@
 # Dynamic-Web-Application-LAMP-Stack-Terraform-modules
 
-This is a repository to store terraform scripts to automate the deployment of a LAMP (Linux, Apache, MySQL, PHP) STACK app in AWS
+This is a repository to store terraform scripts to automate the deployment of a LAMP (Linux, Apache, MySQL, PHP) Stack app in AWS
 
 
 # Architecture Diagram
